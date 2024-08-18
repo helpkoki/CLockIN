@@ -1,0 +1,3 @@
+pip install pdfrw
+pip install reportlab
+pip install reportlab
