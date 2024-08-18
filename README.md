@@ -78,4 +78,4 @@ We welcome contributions from the community! Please check out our [CONTRIBUTING.
 This project is licensed under the MIT License - see the [LICENSE] file for details.
 
 ## Contact
-For any questions or feedback, feel free to contact us at [email@example.com](mailto:email@example.com).
+For any questions or feedback, feel free to contact us at helpself87@gmail.com .
