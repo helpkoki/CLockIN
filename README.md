@@ -1,11 +1,10 @@
-# PDF Wizard: Auto-Complete PDF Form 
+# PDF Wizard: Auto-Complete PDF Form
 
-Welcome to the PDF Wizard repository! This project aims to make PDF form completion a breeze with our  **PDF Wizard**. This tool is designed to save time and reduce the tedious process of manual editing by automatically filling in forms with your personal data.
+Welcome to the PDF Wizard repository! This project aims to make PDF form completion a breeze with our **PDF Wizard**. This tool is designed to save time and reduce the tedious process of manual editing by automatically filling in forms with your personal data.
 
-##Overview
-Auto-Complete PDF Form Program is a powerful tool designed to simplify and streamline the process of filling out PDF forms. With automated field detection, smart suggestions, and user profile integration, this program significantly reduces the time and effort required to complete forms, all while ensuring accuracy and enhancing accessibility. Whether you’re filling out forms for personal, professional, or organizational use, this tool is your go-to solution for making form-filling less tedious and more efficient.
+## Overview
 
-
+The Auto-Complete PDF Form Program is a powerful tool designed to simplify and streamline the process of filling out PDF forms. With automated field detection, smart suggestions, and user profile integration, this program significantly reduces the time and effort required to complete forms, all while ensuring accuracy and enhancing accessibility. Whether you’re filling out forms for personal, professional, or organizational use, this tool is your go-to solution for making form-filling less tedious and more efficient.
 
 ## Key Features
 
@@ -76,8 +75,7 @@ Auto-Complete PDF Form Program is a powerful tool designed to simplify and strea
 We welcome contributions from the community! Please check out our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get involved.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE] file for details.
 
 ## Contact
 For any questions or feedback, feel free to contact us at [email@example.com](mailto:email@example.com).
-
