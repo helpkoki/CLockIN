@@ -8,7 +8,7 @@ Thank you for your interest in contributing to FormEase! We welcome contribution
 
 If you encounter any bugs or issues with FormEase, please follow these steps:
 
-1. **Search Existing Issues**: Check the (https://github.com/helpkoki/VULTUE.git) to see if the problem has already been reported.
+1. **Search Existing Issues**: Check the (https://github.com/helpkoki/PDF-Wizard.git) to see if the problem has already been reported.
 2. **Create a New Issue**: If you don’t find a related issue, open a new issue and provide detailed information, including:
    - A clear description of the problem
    - Steps to reproduce the issue
