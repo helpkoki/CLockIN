@@ -55,9 +55,10 @@ def overlay_text(input_pdf, output_pdf, data):
 # Define the form fields and their values
 data = {
     'name': 'koketso ma',
+    'surname:mopai'
     'age': '15',
     'class': '10th Grade',
-    'address': '1234 Elm Street',
+    
 }
 
 # Fill the PDF form
