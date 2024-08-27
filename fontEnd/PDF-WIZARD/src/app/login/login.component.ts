@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-
+    userSignup:any [] =[];
+    signupObj:any ={
+       userName:'',
+       email:'',
+       password:''
+    };
+    loginObj:any ={
+      userName:'',
+      password:''
+    }; 
 }
