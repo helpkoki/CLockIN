@@ -1,1 +1,40 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!--- <link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+    <div class="login-container">
+        <h2>CUSTOMER LOGIN</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">
+                <!-- <img src="email-icon.png" alt="Email Icon">--> 
+                    <i class='bx bxs-user'></i>
+                    <input type="email" id="email" placeholder="Email ID" required>
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="password">
+                    <i class='bx bxs-lock-alt' ></i>
+                  <!-- <img src="password-icon.png" alt="Password Icon">--> 
+                    <input type="password" id="password" placeholder="Password" required>
+                </label>
+            </div>
+          
+            <div class="remember-forgot"  [ngClass]="testboolean ? 'password' :'' ">
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" (click)="testboolean=false">LOGIN</button>
+        </form>
+       
+    </div>
+</body>
+</html>

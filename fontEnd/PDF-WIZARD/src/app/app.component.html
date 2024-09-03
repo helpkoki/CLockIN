@@ -11,28 +11,10 @@
     <div class="login-container">
         <h2>CUSTOMER LOGIN</h2>
         <form>
-            <div class="input-group">
-                <label for="email">
-                <!-- <img src="email-icon.png" alt="Email Icon">--> 
-                    <i class='bx bxs-user'></i>
-                    <input type="email" id="email" placeholder="Email ID" required>
-                </label>
-            </div>
-            <div class="input-group">
-                <label for="password">
-                    <i class='bx bxs-lock-alt' ></i>
-                  <!-- <img src="password-icon.png" alt="Password Icon">--> 
-                    <input type="password" id="password" placeholder="Password" required>
-                </label>
-            </div>
-            <div class="remember-forgot">
-                <label>
-                    <input type="checkbox" name="remember"> Remember me
-                </label>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit">LOGIN</button>
+          
+            <li><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a></li>
         </form>
+        <router-outlet></router-outlet>
     </div>
 </body>
 </html>
