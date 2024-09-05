@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet,RouterLink ,RouterLinkActive} from '@angular/router';
-
+import { HttpClientModule  } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
 //import {RouterLink} from '@angular/router'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet  ,CommonModule , RouterLink, RouterLinkActive],
+  imports: [RouterOutlet  ,CommonModule , RouterLink, RouterLinkActive ,HttpClientModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrected here
 })
@@ -19,10 +19,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('App initialized ngOnInit(1)');
+  
 
   }
-  onLogin(){
-    console.log('Login button clicked');
-  }
+  
 }
