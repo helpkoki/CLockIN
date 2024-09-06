@@ -13,6 +13,7 @@ import { RouterOutlet,RouterLink ,RouterLinkActive} from '@angular/router';
 export class BookComponent implements OnInit{
   books: any = []; 
    constructor(private http:HttpClient){}
+   
   ngOnInit(){
     let response=this.http.get("http://localhost:8081/findAllBooks");
     //response.subscribe((data)=>console.log(data))

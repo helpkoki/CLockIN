@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   <!--- <link rel="stylesheet" href="styles.css">-->
+    <title>Document</title>
 </head>
 <body>
-    <div class="login-container">
-        <h2>CUSTOMER LOGIN</h2>
-        
-            <li><a routerLink="/login" >login</a></li>
+    <div class="app-container">
+        <header>
+          <!-- Navigation, logo, etc. -->
+          <nav>
+            <a routerLink="/login" routerLinkActive="active">Login</a>
+            <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+            <a routerLink="/book" routerLinkActive="active">Book</a>
+          </nav>
           
-            <li><a routerLink="/book" > books</a></li>
-        <router-outlet></router-outlet>
-    </div>
+          <router-outlet></router-outlet>
+        </header>
+        
+        <main>
+          <router-outlet></router-outlet> <!-- Routed components are displayed here -->
+        </main>
+        
+        <footer>
+          <!-- Footer content -->
+        </footer>
+      </div>
+      
 </body>
 </html>

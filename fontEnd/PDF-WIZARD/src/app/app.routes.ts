@@ -7,10 +7,6 @@ import { BookComponent } from './book/book.component';
 export const routes: Routes = [
     { path: 'login', component: LoginComponent},
     {path:"dashboard", component: DashboardComponent},
-    {path:"book", component: BookComponent}
+    {path:"book", component: BookComponent},
+  //  { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
-@NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-  })
-  export class AppRoutingModule { }

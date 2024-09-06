@@ -27,4 +27,8 @@ export class LoginComponent {
       userName:'',
       password:''
     }; 
+
+    public  login(){
+         this.router.navigate(["book"]);
+    }
 }
