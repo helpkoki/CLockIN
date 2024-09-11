@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet,RouterLink ,RouterLinkActive} from '@angular/router';
-import { HttpClientModule  } from '@angular/common/http';
+import { HttpClientModule ,HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
 import { CommonModule } from '@angular/common'
-//import {RouterLink} from '@angular/router'
+
 
 @Component({
   selector: 'app-root',
