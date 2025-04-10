@@ -1,7 +1,0 @@
-what to install will working python 3.10
-
-pip install pdfrw
-pip install reportlab
-
-
-

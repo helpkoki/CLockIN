@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+}
+
+body {
+    background-color: #e6f7ff;
+    background-image:
+        radial-gradient(circle at 10% 20%, #ffcc00 1%, transparent 4%),
+        radial-gradient(circle at 30% 70%, #ff66aa 1%, transparent 4%),
+        radial-gradient(circle at 70% 10%, #66ffcc 1%, transparent 4%),
+        radial-gradient(circle at 90% 80%, #66aaff 1%, transparent 4%);
+    font-family: 'Comic Neue', cursive;
+}
+
+.clock-container {
+    background: white;
+    border: 4px solid #000;
+    border-radius: 20px;
+    padding: 40px;
+    width: 320px;
+    box-shadow: 10px 10px 0 #000;
+    text-align: center;
+    position: relative;
+    margin: 60px auto;
+}
+
+/* Cartoon clock character */
+.clock-character {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.clock-face {
+    width: 100px;
+    height: 100px;
+    background: #ffcc00;
+    border: 3px solid #000;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 3px 3px 0 #000;
+}
+
+.clock-eyes {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clock-eye {
+    width: 15px;
+    height: 20px;
+    background: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock-eye::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #000;
+    border-radius: 50%;
+    top: 7px;
+    left: 5px;
+}
+
+.clock-mouth {
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+    width: 30px;
+    height: 15px;
+    border-bottom: 3px solid #000;
+    border-radius: 50%;
+}
+
+.clock-arms {
+    position: absolute;
+    bottom: -15px;
+    left: 25px;
+}
+
+.clock-arm {
+    width: 5px;
+    height: 30px;
+    background: #000;
+    position: absolute;
+}
+
+.clock-arm.left {
+    left: 10px;
+    transform: rotate(-20deg);
+}
+
+.clock-arm.right {
+    left: 40px;
+    transform: rotate(20deg);
+}
+
+.clock-legs {
+    position: absolute;
+    bottom: -50px;
+    left: 25px;
+}
+
+.clock-leg {
+    width: 6px;
+    height: 35px;
+    background: #000;
+    position: absolute;
+}
+
+.clock-leg.left {
+    left: 20px;
+    transform: rotate(-10deg);
+}
+
+.clock-leg.right {
+    left: 45px;
+    transform: rotate(10deg);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff6600;
+    text-shadow: 2px 2px 0 #000;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+button {
+    background-color: #ffcc00;
+    border: 3px solid #000;
+    border-radius: 15px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 #000;
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), transparent);
+    top: 0;
+    left: 0;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: 3px 3px 0 #999;
+    color: #666;
+}
+
+button:hover:not(:disabled) {
+    background-color: #ffeb3b;
+    transform: scale(1.05);
+    animation: wiggle 0.5s ease;
+}
+
+button:active:not(:disabled) {
+    box-shadow: 2px 2px 0 #000;
+    transform: translate(3px, 3px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    background: #ffffcc;
+    border: 2px dashed #666;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+li {
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.timestamp {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.clock-in {
+    color: #009900;
+}
+
+.clock-out {
+    color: #990000;
+}
+
+.current-status {
+    margin-top: 15px;
+    padding: 10px;
+    background: #e6f7ff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+}
+
+.app-container {
+    /* Replace your .clock-container class or add this as a wrapper */
+    background: white;
+    border: 2px solid #000;
+    width: 400px;
+    box-shadow: 10px 10px 0 #000;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-tabs {
+    display: flex;
+    background-color: #ffcc00;
+    border-bottom: 2px solid #000;
+}
+
+.nav-tab {
+    flex: 1;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    border-right: 2px solid #000;
+}
+.nav-tab:last-child {
+    border-right: none;
+}
+
+.nav-tab.active {
+    background-color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: -2px;
+}
+
+.nav-tab:hover:not(.active) {
+    background-color: #ffeb3b;
+}
+.tab-content {
+    display: none;
+    padding: 40px;
+}
+
+.tab-content.active {
+    display: block;
+}
